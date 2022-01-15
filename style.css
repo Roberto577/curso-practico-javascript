@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: blue;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: white;
+    margin: 10px 0;
+    cursor: pointer;
+}
+header .header-nav-items{
+    display: flex;
+    flex-direction: row;
+}
+header .header-nav-items a{
+    font-size: 1.8rem;
+    color: white;
+    margin: 0 10px;
+    transition: .5s all ease;
+}
+header .header-nav-items a:hover{
+    color: black;
+}
+
+/* SECTION HOME */
+.section-home{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 87vh;
+    background-color: cadetblue;
+}
+.section-home .container-elements{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    align-items: center;
+}
+.container-elements h2{
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.container-elements p{
+    font-size: 1.8rem;
+}
+.container-elements .elements-buttons{
+    display: flex;
+}
+.elements-buttons a{
+    margin: 15px 10px;
+    background-color: cornflowerblue;
+    padding: 18px 30px;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.6rem;
+}
+.elements-buttons a:hover{
+    background-color: blue;
+}
