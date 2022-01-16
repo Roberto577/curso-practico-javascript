@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <h1 class="logo">Math WebSite</h1>
+        <h1 class="logo"><a href="./index.html">Math WebSite</a></h1>
         <nav>
             <ul class="header-nav-items">
                 <li><a href="./figuras.html">Geometría</a></li>
@@ -21,17 +21,31 @@
             </ul>
         </nav>
     </header>
-    <section>
-        <h2>Calcula el precio a pagar de tus productos con descuento</h2>
-        <form action="">
-            <label for="inputPrice">Escribe el precio de tu producto: </label>
-            <input id="inputPrice" type="number">
-
-            <label for="inputCoupon">Escribe el cupon de descuento de tu producto: </label>
-            <input id="inputCoupon" type="text">
-            <button type="button" onclick="buttonPriceDiscount()">Calcular el precio con descuento</button>
-            <p id="resultPrice"></p>
-        </form>
+    <section class="section-descuentos">
+        <div class="container-desc">
+            <h2>Precio Con Cupon de Descuento</h2>
+            <form class="container-app">
+                <label class="labelPrice" for="inputPrice">Precio </label>
+                <input id="inputPrice" type="number" placeholder="Ej. 1990">
+                <label class="labelCoupon" for="inputCoupon">Cupón de Descuento </label>
+                <input id="inputCoupon" type="text">
+                <button type="button" onclick="buttonPriceDiscountCoupon()">Calcular</button>
+                <p id="resultPriceCoupon"></p>
+            </form>
+        </div>
+    </section>
+    <section class="section-descuentos">
+        <div class="container-desc">
+            <h2>Precio Con Descuento</h2>
+            <form class="container-app">
+                <label class="labelPrice" for="inputPrice">Precio </label>
+                <input id="inputPrice" type="number" placeholder="Ej. 1990">
+                <label class="labelDiscount" for="inputDiscount">Cupón de Descuento</label>
+                <input id="inputDiscount" type="number" placeholder="10">
+                <button type="button" onclick="buttonPriceDiscount()">Calcular</button>
+                <p id="resultPrice"></p>
+            </form>
+        </div>
     </section>
     
     <script src="./descuentos.js"></script>

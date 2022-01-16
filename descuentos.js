@@ -1,3 +1,4 @@
+//Coupon Discount
 const coupons = [
     "A123",
     "B123",
@@ -11,7 +12,7 @@ function calcularPrecioCDescuento(precio, descuento){
     return precioCDescuento;
 }
 
-function buttonPriceDiscount(){
+function buttonPriceDiscountCoupon(){
     const inputPrice = document.getElementById("inputPrice");
     const priceValue = inputPrice.value;
 
@@ -34,6 +35,21 @@ function buttonPriceDiscount(){
 
     const precioCDescuento = calcularPrecioCDescuento(priceValue, descuento);
 
+    const resultP = document.getElementById("resultPriceCoupon");
+    resultP.innerText = "El precio Final es $ " + precioCDescuento;
+}
+
+//Price Discount
+
+function buttonPriceDiscount(){
+    const inputPrice = document.getElementById("inputPrice");
+    const priceValue = inputPrice.value;
+
+    const inputDiscount = document.getElementById("inputDiscount");
+    const discountValue = inputDiscount.value;
+
+    const precioCDescuento = calcularPrecioCDescuento(priceValue, discountValue);
+
     const resultP = document.getElementById("resultPrice");
-    resultP.innerText = "El precio con descuento es: " + precioCDescuento;
+    resultP.innerText = `El precio final es $ ${precioCDescuento}`;
 }
