@@ -21,39 +21,52 @@
             </ul>
         </nav>
     </header>
-    <section>
-        <h2>Calcula el perímetro y área de un cuadrado</h2>
-        <form>
-            <label for="inputCuadrado">Digite cuánto mide cada lado de tu cuadrado: </label>
-            <input type="number" id="inputCuadrado">
-            <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perímetro</button>
-            <button type="button" onclick="calcularAreaCuadrado()">Calcular el área</button>
-        </form>
+    <section class="section-fig">
+        <div class="container-fig">
+            <h2>CUADRADO</h2>
+            <form class="container_app-fig">
+                <label for="inputCuadrado">Lado </label>
+                <input type="number" id="inputCuadrado">
+                <button type="button" onclick="calcularPerimetroCuadrado()">Calcular perímetro</button>
+                <button type="button" onclick="calcularAreaCuadrado()">Calcular área</button>
+                <p id="resultCuadrado"></p>
+            </form>
+        </div>
     </section>
-    <section>
-        <h2>Calcula el perímetro y área de un Triángulo</h2>
-        <form>
-            <label for="inputTrianguloLado1">Digite cuánto mide el lado 1 de tu Triángulo: </label>
-            <input type="number" id="inputTrianguloLado1">
-            <label for="inputTrianguloLado2">Digite cuánto mide el lado 2 de tu Triángulo: </label>
-            <input type="number" id="inputTrianguloLado2">
-            <label for="inputTrianguloBase">Digite cuánto mide la base de tu Triángulo: </label>
-            <input type="number" id="inputTrianguloBase">
-            <button type="button" onclick="calcularAlturaTriangulo()">Calcular la altura</button>
-            <button type="button" onclick="calcularPerimetroTriangulo()">Calcular el perímetro</button>
-            <button type="button" onclick="calcularAreaTriangulo()">Calcular el área</button>
-        </form>
+    <section class="section-fig">
+        <div class="container-fig">
+            <h2>TRIÁNGULO</h2>
+            <form class="container_app-fig">
+                <label for="inputTrianguloLado1">Lado 1</label>
+                <input type="number" id="inputTrianguloLado1">
+                <label for="inputTrianguloLado2">Lado 2</label>
+                <input type="number" id="inputTrianguloLado2">
+                <label for="inputTrianguloBase">Base</label>
+                <input type="number" id="inputTrianguloBase">
+                <button type="button" onclick="calcularAlturaTriangulo()">Calcular altura</button>
+                <button type="button" onclick="calcularPerimetroTriangulo()">Calcular perímetro</button>
+                <button type="button" onclick="calcularAreaTriangulo()">Calcular área</button>
+                <p id="resultTriangulo"></p>
+            </form>
+        </div>
     </section>
-    <section>
-        <h2>Calcula el diámetro, el perímetro y el área de un círculo</h2>
-        <form>
-            <label for="inputCirculo">Digite cuánto mide el radio del círculo: </label>
-            <input type="number" id="inputCirculo">
-            <button type="button" onclick="calcularDiametroCirculo()">Calcular el diámetro</button>
-            <button type="button" onclick="calcularPerimetroCirculo()">Calcular el perímetro</button>
-            <button type="button" onclick="calcularAreaCirculo()">Calcular el área</button>
-        </form>
+    <section class="section-fig">
+        <div class="container-fig">
+            <h2>CÍRCULO</h2>
+            <form class="container_app-fig">
+                <label for="inputCirculo">Radio</label>
+                <input type="number" id="inputCirculo">
+                <button type="button" onclick="calcularDiametroCirculo()">Calcular diámetro</button>
+                <button type="button" onclick="calcularPerimetroCirculo()">Calcular perímetro</button>
+                <button type="button" onclick="calcularAreaCirculo()">Calcular área</button>
+                <p id="resultCirculo"></p>
+            </form>
+        </div>
     </section>
+    <footer>
+        <p>Hecho por Roberto Valenzuela</p>
+    </footer>
+    
     <script src="./figuras.js"></script>
 </body>
 </html>

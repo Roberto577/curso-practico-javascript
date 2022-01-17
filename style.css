@@ -17,10 +17,13 @@ header{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: auto;
+    height: 13vh;
     background-color: blue;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+}
+header .logo{
+    margin-bottom: 5px;
 }
 header .logo a{
     font-size: 2.6rem;
@@ -34,7 +37,7 @@ header .header-nav-items{
     flex-direction: row;
 }
 header .header-nav-items a{
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     color: white;
     margin: 0 10px;
     transition: .5s all ease;
@@ -48,8 +51,8 @@ header .header-nav-items a:hover{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 87vh;
-    background-color: cadetblue;
+    height: 73vh;
+    background-color: white;
 }
 .section-home .container-elements{
     display: flex;
@@ -61,9 +64,13 @@ header .header-nav-items a:hover{
     font-size: 2.8rem;
     font-weight: bold;
     margin: 20px 0;
+    text-align: center;
+    text-transform: uppercase;
 }
 .container-elements p{
     font-size: 1.8rem;
+    text-align: center;
+
 }
 .container-elements .elements-buttons{
     display: flex;
@@ -80,15 +87,15 @@ header .header-nav-items a:hover{
     background-color: blue;
 }
 
-/* Section Descuentos */
-.section-descuentos{
+/* Section GEOMETRIA */
+.section-fig{
     display: flex;
     flex-direction: column;
     width: 100%;
     height: auto;
     background-color: #f3f2f2;
 }
-.section-descuentos h2{
+.section-fig h2{
     width: 70%;
     font-size: 2.0rem;
     font-weight: 500;
@@ -96,7 +103,7 @@ header .header-nav-items a:hover{
     align-self: center;
     text-align: center;
 }
-.section-descuentos .container-desc{
+.section-fig .container-fig{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -108,7 +115,88 @@ header .header-nav-items a:hover{
     background-color: white;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
 }
-.section-descuentos .container-desc .container-app{
+.section-fig .container-fig .container_app-fig{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container_app-fig label{
+    font-size: 1.4rem;
+    color: #1a1919;
+}
+.container_app-fig input{
+    align-self: center;
+    width: 100%;
+    max-width: 500px;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid rgba(0,0,0,0.3);
+    border-radius: 1rem;
+    background-color: rgba(230, 230, 230, 0.6);
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: .3s;
+}
+.container_app-fig input:hover{
+    background-color:rgba(0,0,0,0.1);
+}
+.container_app-fig input:focus{
+    background-color: #fff;
+    border: 2px solid blue;
+}
+.container_app-fig button{
+    margin: 10px;
+    padding: 1rem 1rem;
+    font-size: 1.1rem;
+    background-color: cornflowerblue;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10rem;
+    color: #fff;
+    transition: .3s;
+    align-self: center;
+}
+.container_app-fig button:hover{
+    transform: scale(1.1);
+}
+.container_app-fig p{
+    font-size: 1.5rem;
+    color: crimson;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Section Descuentos */
+.section-desc{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 73vh;
+    background-color: #f3f2f2;
+}
+.section-desc h2{
+    width: 70%;
+    font-size: 2.0rem;
+    font-weight: 500;
+    margin: 20px 0;
+    align-self: center;
+    text-align: center;
+}
+.section-desc .container-desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    margin: 20px 0;
+    width: 80%;
+    border-radius: 10px;
+    border: 1px black solid;
+    background-color: white;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+.section-desc .container-desc .container-app{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -157,4 +245,19 @@ header .header-nav-items a:hover{
 .container-app p{
     font-size: 1.6rem;
     color: crimson;
+}
+
+/* FOOTER */
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+}
+footer p{
+    font-size: 1.6rem;
+    color: white;
+    text-align: center;
+    margin: 12px 0;
 }

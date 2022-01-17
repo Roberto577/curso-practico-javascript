@@ -21,32 +21,22 @@
             </ul>
         </nav>
     </header>
-    <section class="section-descuentos">
-        <div class="container-desc">
-            <h2>Precio Con Cupon de Descuento</h2>
-            <form class="container-app">
-                <label class="labelPrice" for="inputPrice">Precio </label>
-                <input id="inputPrice" type="number" placeholder="Ej. 1990">
-                <label class="labelCoupon" for="inputCoupon">Cupón de Descuento </label>
-                <input id="inputCoupon" type="text">
-                <button type="button" onclick="buttonPriceDiscountCoupon()">Calcular</button>
-                <p id="resultPriceCoupon"></p>
-            </form>
-        </div>
-    </section>
-    <section class="section-descuentos">
+    <section class="section-desc">
         <div class="container-desc">
             <h2>Precio Con Descuento</h2>
             <form class="container-app">
-                <label class="labelPrice" for="inputPrice">Precio </label>
+                <label for="inputPrice">Precio </label>
                 <input id="inputPrice" type="number" placeholder="Ej. 1990">
-                <label class="labelDiscount" for="inputDiscount">Cupón de Descuento</label>
-                <input id="inputDiscount" type="number" placeholder="10">
+                <label for="inputDiscount">% de Descuento</label>
+                <input id="inputDiscount" type="number" placeholder="Ej. 10">
                 <button type="button" onclick="buttonPriceDiscount()">Calcular</button>
                 <p id="resultPrice"></p>
             </form>
         </div>
     </section>
+    <footer>
+        <p>Hecho por Roberto Valenzuela</p>
+    </footer>
     
     <script src="./descuentos.js"></script>
 </body>
