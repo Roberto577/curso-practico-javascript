@@ -5,6 +5,7 @@ function ordenarLista(lista){
         return a - b;
     }
 }
+
 function calcularMediaAritmetica(lista){
 
 //Suma los parametros
