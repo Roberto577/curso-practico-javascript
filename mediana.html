@@ -5,14 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mediana</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Mediana</h1>
-    <section>
-        <div>
-            <input type="text">
+    <header>
+        <h1 class="logo"><a href="./index.html">Math WebSite</a></h1>
+        <nav>
+            <ul class="header-nav-items">
+                <li><a href="./figuras.html">Geometría</a></li>
+                <li><a href="./descuentos.html">Descuentos</a></li>
+                <!-- <li><a href="./promedio.html">Taller #3a</a></li>
+                <li><a href="./mediana.html">Taller #3b</a></li>
+                <li><a href="./moda.html">Taller #3c</a></li>
+                <li><a href="./salarios.html">Taller #4</a></li> -->
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <h2>Mediana</h2>
+            <form class="container-app">
+                <label for="inputNumber"></label>
+                <input type="number" id="inputNumber" placeholder="Añada un número">
+                <button id="btnAgregar">Agregar</button>
+                <button id="btnCalcular">Calcular</button>
+            </form>
+            <ul class="lista"></ul>
+            <div class="resultado"></div>
         </div>
     </section>
+
+    <footer>
+        <p>Hecho por Roberto Valenzuela</p>
+    </footer>
 
     <script src="./mediana.js"></script>
 </body>

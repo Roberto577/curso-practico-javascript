@@ -174,7 +174,7 @@ header .header-nav-items a:hover{
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: 380px;
+    min-height: 500px;
     height: auto;
     background-color: #f3f2f2;
 }
