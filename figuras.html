@@ -25,49 +25,52 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <section class="section-fig">
+            <div class="container-fig">
+                <h2>CUADRADO</h2>
+                <form class="container_app-fig">
+                    <label for="inputCuadrado">Lado </label>
+                    <input type="number" id="inputCuadrado">
+                    <button type="button" onclick="calcularPerimetroCuadrado()">Calcular perímetro</button>
+                    <button type="button" onclick="calcularAreaCuadrado()">Calcular área</button>
+                    <p id="resultCuadrado"></p>
+                </form>
+            </div>
+        </section>
 
-    <section class="section-fig">
-        <div class="container-fig">
-            <h2>CUADRADO</h2>
-            <form class="container_app-fig">
-                <label for="inputCuadrado">Lado </label>
-                <input type="number" id="inputCuadrado">
-                <button type="button" onclick="calcularPerimetroCuadrado()">Calcular perímetro</button>
-                <button type="button" onclick="calcularAreaCuadrado()">Calcular área</button>
-                <p id="resultCuadrado"></p>
-            </form>
-        </div>
-    </section>
-    <section class="section-fig">
-        <div class="container-fig">
-            <h2>TRIÁNGULO</h2>
-            <form class="container_app-fig">
-                <label for="inputTrianguloLado1">Lado 1</label>
-                <input type="number" id="inputTrianguloLado1">
-                <label for="inputTrianguloLado2">Lado 2</label>
-                <input type="number" id="inputTrianguloLado2">
-                <label for="inputTrianguloBase">Base</label>
-                <input type="number" id="inputTrianguloBase">
-                <button type="button" onclick="calcularAlturaTriangulo()">Calcular altura</button>
-                <button type="button" onclick="calcularPerimetroTriangulo()">Calcular perímetro</button>
-                <button type="button" onclick="calcularAreaTriangulo()">Calcular área</button>
-                <p id="resultTriangulo"></p>
-            </form>
-        </div>
-    </section>
-    <section class="section-fig">
-        <div class="container-fig">
-            <h2>CÍRCULO</h2>
-            <form class="container_app-fig">
-                <label for="inputCirculo">Radio</label>
-                <input type="number" id="inputCirculo">
-                <button type="button" onclick="calcularDiametroCirculo()">Calcular diámetro</button>
-                <button type="button" onclick="calcularPerimetroCirculo()">Calcular perímetro</button>
-                <button type="button" onclick="calcularAreaCirculo()">Calcular área</button>
-                <p id="resultCirculo"></p>
-            </form>
-        </div>
-    </section>
+        <section class="section-fig">
+            <div class="container-fig">
+                <h2>TRIÁNGULO</h2>
+                <form class="container_app-fig">
+                    <label for="inputTrianguloLado1">Lado 1</label>
+                    <input type="number" id="inputTrianguloLado1">
+                    <label for="inputTrianguloLado2">Lado 2</label>
+                    <input type="number" id="inputTrianguloLado2">
+                    <label for="inputTrianguloBase">Base</label>
+                    <input type="number" id="inputTrianguloBase">
+                    <button type="button" onclick="calcularAlturaTriangulo()">Calcular altura</button>
+                    <button type="button" onclick="calcularPerimetroTriangulo()">Calcular perímetro</button>
+                    <button type="button" onclick="calcularAreaTriangulo()">Calcular área</button>
+                    <p id="resultTriangulo"></p>
+                </form>
+            </div>
+        </section>
+        <section class="section-fig">
+            <div class="container-fig">
+                <h2>CÍRCULO</h2>
+                <form class="container_app-fig">
+                    <label for="inputCirculo">Radio</label>
+                    <input type="number" id="inputCirculo">
+                    <button type="button" onclick="calcularDiametroCirculo()">Calcular diámetro</button>
+                    <button type="button" onclick="calcularPerimetroCirculo()">Calcular perímetro</button>
+                    <button type="button" onclick="calcularAreaCirculo()">Calcular área</button>
+                    <p id="resultCirculo"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
     <footer>
         <p>Hecho por <a href="https://github.com/Roberto577">Roberto Valenzuela </a><i class="fa fa-heart"></i></p>
     </footer>
