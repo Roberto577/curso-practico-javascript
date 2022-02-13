@@ -1,4 +1,4 @@
-# curso-practico-javascript
+# Math WebSite con JavaScript
 
 ...
 
