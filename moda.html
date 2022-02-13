@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moda</title>
+    <meta name="description" content="Ejercicios Matemáticos con JavaScript">
+    <meta name="robots" content="Sitio Web de ejercicios matemáticos">
+    <title>Home | Curso Práctico de JavaScript</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
         <h1 class="logo"><a href="./index.html">Math WebSite</a></h1>
-        <nav>
-            <ul class="header-nav-items">
+        <nav class="menu">
+            <label id="icon"><i class="fa fa-bars"></i></label>
+            <ul>
                 <li><a href="./figuras.html">Geometría</a></li>
                 <li><a href="./descuentos.html">Descuentos</a></li>
-                <!-- <li><a href="./promedio.html">Taller #3a</a></li>
-                <li><a href="./mediana.html">Taller #3b</a></li>
-                <li><a href="./moda.html">Taller #3c</a></li>
-                <li><a href="./salarios.html">Taller #4</a></li> -->
+                <li><a href="./promedio.html">Promedio</a></li>
+                <li><a href="./mediana.html">Mediana</a></li>
+                <li><a class="active" href="./moda.html">Moda</a></li>
             </ul>
         </nav>
     </header>
@@ -37,9 +41,11 @@
     </section>
 
     <footer>
-        <p>Hecho por Roberto Valenzuela</p>
+        <p>Hecho por <a href="https://github.com/Roberto577">Roberto Valenzuela </a><i class="fa fa-heart"></i></p>
     </footer>
 
     <script src="./moda.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./code.js"></script>
 </body>
 </html>

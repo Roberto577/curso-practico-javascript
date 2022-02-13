@@ -15,15 +15,15 @@ ul{
 }
 header{
     display: flex;
-    flex-direction: column;
+    flex-direction: flex;
     width: 100%;
     height: 13vh;
     background-color: blue;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 header .logo{
-    margin-bottom: 5px;
+    margin-left: 40px;
 }
 header .logo a{
     font-size: 2.6rem;
@@ -32,6 +32,40 @@ header .logo a{
     margin: 10px 0;
     cursor: pointer;
 }
+
+/* Menu responsive */
+header .menu ul{
+    margin-right: 10px;
+}
+.menu ul li{
+    display: inline-block;
+    margin:  0 8px;
+    line-height: 80px;
+}
+.menu ul li a{
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+.menu ul li a.active, a:hover{
+    border: 1px solid white;
+    transition: .5s;
+}
+.menu #icon{
+    color: white;
+    font-size: 25px;
+    line-height: 80px;
+    float: right;
+    margin: 0 40px 10px 0;
+    cursor: pointer;
+    display: none;
+}
+
+
+
 header .header-nav-items{
     display: flex;
     flex-direction: row;
@@ -72,6 +106,7 @@ header .header-nav-items a:hover{
     text-align: center;
 }
 .container-elements .elements-buttons{
+    width: 70%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -287,4 +322,57 @@ footer p{
     color: white;
     text-align: center;
     margin: 12px 0;
+}
+footer p a{
+    color: aqua;
+}
+
+
+/* Media Queries */
+@media (max-width: 750px){
+    .menu #icon{
+        margin-top: 10px;
+        display: block;
+    }
+    .menu ul{
+        position: fixed;
+        width: 50%;
+        height: 100vh;
+        background: rgb(82, 82, 184);
+        top: 60px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    .menu ul li{
+        display: block;
+        margin: 45px 10px;
+        line-height: 30px;
+    }
+    .menu ul li a{
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+    .menu ul li a.active, a:hover{
+        border: 1.5px solid rgb(2, 3, 100);
+        color: rgb(2, 3, 100);
+    }
+    .menu ul.show{
+        left: 0;
+    }
+}
+
+@media (min-width: 900px){
+    .menu ul li a{
+        font-size: 1.6rem;
+    }
+    .section{
+        min-height: 447px;
+    }
+    .section-home{
+        min-height: 447px;
+    }
+    .section-home .container-elements{
+        margin-top: 80px;
+    }
 }
